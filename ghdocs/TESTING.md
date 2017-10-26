@@ -186,3 +186,7 @@ A. Using browser methods like getBoundingClientRect won't work when using enzyme
 *Q. My event isn't being triggered.*
 
 A. Make sure to use Enzyme `simulate` api to simulate React events. For example: `menuItem.simulate('click');`
+
+*Q. I see some errors on Travis build but no error message output.*
+
+A. Try run vrtest, cd into apps/vr-tests, and run npm run screen:local, you will find some error messages that travis didsn't pop.
